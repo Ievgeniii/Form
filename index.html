@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+	<!-- JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+</head>
+<body>
+	<div id="form">
+		<form>
+			<div class="form-section">		
+				<label for="name">Name<span class="red"> *</span></label>
+				<input type="text" id="name">
+				<span id="name-span" class="red msg"></span>
+			</div>	
+
+			<div class="form-section">	
+				<label for="address1">Address 1<span class="red"> *</span></label>
+				<input type="text" id="address1">
+				<span id="address1-span" class="red msg"></span>
+			</div>
+
+			<div class="form-section">	
+				<label for="address2">Address 2</label>
+				<input type="text" id="address2">
+				<span id="address2-span" class="red msg"></span>
+			</div>
+
+			<div class="form-section">	
+				<label for="city">City<span class="red"> *</span></label>
+				<input type="text" id="city">
+				<span id="city-span" class="red msg"></span>
+			</div>
+
+			<div class="form-section">	
+				<label for="state">State<span class="red"> *</span></label>
+				<select id="state">
+					<option value=''></option>
+					<option value="al">AL</option>
+					<option value="az">AZ</option>
+					<option value="ar">AR</option>
+				</select>
+				<span id="state-span" class="red msg"></span>
+			</div>
+
+			<div class="form-section">	
+				<label for="zip">Zip Code<span class="red"> *</span></label>
+				<input type="text" id="zip">
+				<span id="zip-span" class="red msg"></span>
+			</div>			
+
+			<div class="form-section btn-section">	
+				<button type="button" id="ok-btn">OK</button>
+				<button type="button" id="reset-btn">CANCEL</button>
+			</div>
+			<p><span class="red">* </span>Indicates required field</p>
+		</form>
+	</div>
+	<!-- Script -->
+	<script src="script.js"></script>
+</body>
+</html>
